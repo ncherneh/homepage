@@ -22,4 +22,4 @@ This project is developed using the following technologies:
 ## Result
 
 Follow the link below to see the result:
-(ncherneh.github.io/homepage/)
+[ncherneh.github.io/homepage/]
