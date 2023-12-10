@@ -1,0 +1,130 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+
+  --primary-text-color: #181820;
+  --secondary-text-color: #5c5c62;
+  --durability-text-color: #6a737d9c;
+  --icon-color: #6a737d;
+  --border-color: #ff9a0045;
+  --text-decoration-color: #ff9a00;
+}
+
+.resume {
+  margin: 50px auto;
+  border: 1px solid #f5f5f5;
+  box-shadow: 1px 1px 7px 7px #f5f5f5;
+  padding: 30px 0;
+  max-width: 900px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 900px;
+}
+
+.content {
+  display: flex;
+}
+
+.resume__block {
+  border-bottom: 3px solid var(--border-color);
+  margin: 5px 0 15px;
+}
+
+.left-side, .right-side {
+  flex: 1;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+
+.block-info {
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+@media screen and (width <= 576px) {
+  .main-info,
+  .contact_info_container {
+    flex-direction: column;
+  }
+
+  .contact_info_container {
+    align-items: center;
+  }
+
+  .contact-info__block:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .experiences {
+    margin-right: 0;
+  }
+}
+
+.contact-info__item {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+
+.contact-info__item-icon-wrapper {
+  margin-right: 10px;
+}
+
+.contact-info__item-icon path {
+  fill: var(--icon-color);
+}
+
+.contact-info__item-icon {
+  height: 1.1428rem;
+  vertical-align: text-bottom;
+}
+
+.contact-info__avatar {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid var(--text-decoration-color);
+}
+
+p {
+  color: var(--secondary-text-color);
+  text-align: justify;
+}
+
+.subheader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.experiences__company-header-durability,
+.experiences__company-project-role {
+  color: var(--durability-text-color);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.experiences__company-project-responsibilities,
+.skills__company-project-responsibilities {
+  color: var(--secondary-text-color);
+  padding-left: 20px;
+  text-align: justify;
+}
